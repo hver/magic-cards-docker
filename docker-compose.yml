@@ -2,7 +2,7 @@ version: "3"
 
 services:
   magic-cards:
-    image: jonmaddox/magic-cards:latest
+    image: hver/magic-cards
     container_name: magic-cards
     network_mode: host
     ports:
@@ -14,7 +14,7 @@ services:
       - "/dev/input/event0:/dev/input/event0"
 
   sonos-http-api:
-    image: jonmaddox/rpi-docker-node-sonos-http-api:latest
+    image: hver/rpi-docker-node-sonos-http-api
     container_name: sonos-http-api
     network_mode: host
     ports:
